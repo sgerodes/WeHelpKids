@@ -168,6 +168,10 @@ document.createElement('footer');
    width="1200" alt=""></p>
   <p></p>
 </body>
+ 
+ 
+ 
+ 
 <a name="description"></a>
 <!-- new Rus Text Block-->
 </div>
@@ -228,10 +232,50 @@ Join us and contribute to the future of these children – in our future! Togeth
 				</div><!--column-image-->
 		</div><!-- column -->
 </div></div></div></div>
-    
-    
-    
-    
+   
+   
+   
+   <!--image slider-->
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <div id="pp-texttop"><div id="front-text3" class="ppbox">
+           <div class="w3-content w3-display-container">
+               <img class="mySlides" src="ABA_fotos/1.jpg" style="width:100%">
+                   <img class="mySlides" src="ABA_fotos/2.jpg" style="width:100%">
+                       <img class="mySlides" src="ABA_fotos/3.jpg" style="width:100%">
+                           <img class="mySlides" src="ABA_fotos/4.jpg" style="width:100%">
+                               <img class="mySlides" src="ABA_fotos/5.jpg" style="width:100%">
+                                   <img class="mySlides" src="ABA_fotos/6.jpg" style="width:100%">
+                                       <img class="mySlides" src="ABA_fotos/7.jpg" style="width:100%">
+                                           <img class="mySlides" src="ABA_fotos/8.jpg" style="width:100%">
+                                               <img class="mySlides" src="ABA_fotos/11.jpg" style="width:100%">
+                                                   <img class="mySlides" src="ABA_fotos/12.jpg" style="width:100%">
+                                                       <img class="mySlides" src="ABA_fotos/13.jpg" style="width:100%">
+                                                           <img class="mySlides" src="ABA_fotos/14.jpg" style="width:100%">
+                                                               
+                                                               <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                                               <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                                                               </div>
+       </div></div>
+       
+       <script>
+           var slideIndex = 1;
+           showDivs(slideIndex);
+           
+           function plusDivs(n) {
+               showDivs(slideIndex += n);
+           }
+       
+       function showDivs(n) {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           if (n > x.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = x.length}
+           for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+           }
+           x[slideIndex-1].style.display = "block";
+       }
+       </script>
     
 <!--
 <div id="pp-texttop"><div id="front-text4" class="ppbox"> Вдохновлённые идеей помощи детям с ограниченными возможностями, мы решили помочь Центру развития детей-аутистов www.aba-centrum.cz 
@@ -397,7 +441,7 @@ Join us and contribute to the future of these children – in our future! Togeth
                                 <h6 class="text-capitalize grey"></h6>
                                 <div class="text-justify">
                                         <p class="member-bio read-more-wrap">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Originally I'm from Russia, now I have living in Prague for last 9 years. I am interested in personal growth, innovation, creativity, technologies and art. I like to meet new people and explore their cultures. I'm currently looking for new opportunities in event management area.
                                         <label class="read-more-trigger" for="phuong-bio"></label>
                                         </p>
                                         </div>
